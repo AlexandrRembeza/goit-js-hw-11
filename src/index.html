@@ -4,22 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
+      <span class="input-wrapper">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">
+          <img src="./images/search-icon.png" alt="search-icon" />
+        </button>
+      </span>
     </form>
 
-    <div class="gallery"></div>
+    <div class="gallery-wrapper">
+      <div class="gallery"></div>
+    </div>
 
-    <button type="button" class="load-more">Load more</button>
+    <div class="button-wrapper">
+      <button type="button" class="load-more buttonload visually-hidden">
+        <i class="spinner-is-hidden fa fa-refresh fa-spin"></i>
+        <span class="button-text">Load more</span>
+      </button>
+    </div>
   </body>
 </html>
