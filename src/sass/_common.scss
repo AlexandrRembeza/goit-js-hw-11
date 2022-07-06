@@ -144,6 +144,7 @@ b {
 
 .load-more:hover {
   transform: scale(1.05);
+  background-color: rgb(166, 218, 249);
 }
 
 .loading {
@@ -155,6 +156,7 @@ b {
 
 .loading:hover {
   transform: scale(1);
+  background-color: lightgray;
 }
 
 .image-link {
