@@ -31,7 +31,7 @@ async function fetchForGetImages(e) {
   closeLodeMoreBtn();
   refs.galleryEL.innerHTML = '';
 
-  const value = e.currentTarget.elements.searchQuery.value.trim();
+  value = e.currentTarget.elements.searchQuery.value.trim();
 
   if (valueIsEmpty(value)) {
     return;
